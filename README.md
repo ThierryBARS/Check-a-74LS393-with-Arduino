@@ -1,4 +1,4 @@
-# Check-a-74LS393-with-Arduino
+# Checks-a-74LS393-with-Arduino
 This is my starting point... And later, I hope to be able to check ALL 74xx.
 
 L'arduino fournira les impulsions a compter sur la broche Digital IO 13 et comptera ces impulsions dans un variable.
