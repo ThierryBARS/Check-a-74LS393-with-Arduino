@@ -1,0 +1,3 @@
+Tester un convertisseur Analogique  Numériaue avec Arduino UNO.
+L'idée a été dans un premier temps de mettre toutes les entrées au meme potentiel.
+Le composant stock 12 valeurs (11 pour les entrées analogique et 1 pour un selftest qui doit etre entre 500 et 524.)
