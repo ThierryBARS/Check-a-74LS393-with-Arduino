@@ -175,11 +175,18 @@ void loop() {
 // A = A ^ (1 << n); inversion du nieme bit en conservqnt les autres inchangés
 
   CycleComplet();
- 
+String deb,milieu,fin,chaine;
+
+  deb="Tension de (";
+  fin=") :";
+  
   for (adr=0;adr<=11;adr++) {
-    Serial.print("Tension de ("); Serial.print(adr); Serial.print(") :");
-    Serial.println(Tensions[adr]);
-    delay(100);
+    milieu=adr;
+    chaine=deb+milieu+fin+Tensions[adr];
+   // Serial.print("Tension de ("); Serial.print(adr); Serial.print(") :");
+    Serial.println(chaine);
+    
   }
+  delay(100);
   Serial.println("---------------------------");
 }
