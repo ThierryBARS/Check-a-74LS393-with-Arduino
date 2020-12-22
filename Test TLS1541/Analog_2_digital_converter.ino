@@ -37,6 +37,7 @@ int Tensions[12];
 byte adr; //adresses des tensions
 byte bi; // bit dea l'adresse a transmettre
 
+String deb,milieu,fin,chaine;
 
 void CkSytemX3(int n){
 
@@ -153,6 +154,10 @@ void setup() {
   digitalWrite(CK_System_D2, LOW) ;
   digitalWrite(CK_IO_D3, LOW) ;
   digitalWrite(ADR_Input_D4, LOW) ;  
+
+  deb="Tension de (";
+  fin=") :";
+ 
 }
 
 
@@ -175,10 +180,8 @@ void loop() {
 // A = A ^ (1 << n); inversion du nieme bit en conservqnt les autres inchangés
 
   CycleComplet();
-String deb,milieu,fin,chaine;
 
-  deb="Tension de (";
-  fin=") :";
+
   
   for (adr=0;adr<=11;adr++) {
     milieu=adr;
